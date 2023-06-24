@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "RobotoMono-Thin";
+    src: url("fonts/RobotoMono-Thin.ttf") format("truetype");
+}
+* {
+    font-family: "RobotoMono-Thin", Arial, sans-serif;
+}
+body {
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.button {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button.enter{
+    background-color: #1d5ce3;
+}
+.button.play{
+    background-color: white;
+}
+h1 {
+    color: #fff;
+}
+.header {
+    background-color: rgba(28, 28, 28, 0.89);
+    color: white;
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.icon{
+    height: 28px;
+    width: 28px;
+    padding: 8px;
+    margin-right: 10px;
+}
+.game-icon{
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+    margin-right: 15px;
+}
+.user-data {
+    display: flex;
+    align-items: center;
+}
+
+.name,
+.surname,
+.balance{
+    margin-right: 10px;
+}
+.game-div {
+    background-color: rgba(35, 35, 35, 0.89);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 15px 15px 0px 0;
+    border-color: rgba(35, 35, 35, 0.89);
+    border-width: 3px;
+}
+
+.game-div .text {
+    font-weight: bold;
+    color: white;
+}
+
+.game-div:hover{
+    cursor: pointer;
+    border-bottom-color: #1d5ce3;
+    transition: border-bottom-color 1s ease;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+.spin-icon {
+    height: 300px;
+    width: 300px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.hidden{
+    color: white;
+}

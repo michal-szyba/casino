@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:include="layout.html">
+<head>
+</head>
+<body>
+<div th:fragment="content">
+  <h1>available games:</h1>
+  <div  class="game-div" th:onclick="window.location.href='/roulette/play'" >
+    <img class="game-icon" src="/icons/roulette-svgrepo-com.svg">
+    <div class="text">Roulette</div>
+  </div>
+  </br>
+  <div href="" class="game-div">
+    <img class="game-icon" src="/icons/slot-svgrepo-com.svg">
+    <div class="text">Slots</div>
+  </div>
+</div>
+</body>
+</html>

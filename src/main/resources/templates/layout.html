@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Moja aplikacja</title>
+  <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<header class="header">
+  <div class="user-data">
+    <img class="icon" src="/icons/user-svgrepo-com.svg" alt="user photo">
+    <span class="name" th:text="firstName"></span>
+    <span class="surname" th:text="lastName"></span>
+    <span th:text="'Balance: ' + ${saldoUzytkownika} ?: 0">Balance: 0</span>
+  </div>
+</header>
+<div class="content">
+  <div th:replace="${view} :: content"></div>
+</div>
+</body>
+</html>

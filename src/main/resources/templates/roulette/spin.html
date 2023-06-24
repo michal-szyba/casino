@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:include="layout.html">
+<head>
+  <script src="/js/spinresult.js"></script>
+</head>
+<body>
+<div th:fragment="content">
+  <div class="roulette-icon">
+    <img  class="spin-icon" id="spin-icon" src="/icons/roulette-svgrepo-com.svg">
+  </div>
+  <div class="hidden" id="result">
+    <h1 th:text="'Number: ' + ${number}"></h1>
+    <h1 th:text="'Color: ' + ${color}"></h1>
+  </div>
+</div>
+</body>
+</html>
