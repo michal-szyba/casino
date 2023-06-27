@@ -108,5 +108,5 @@ h1 {
 }
 
 .hidden{
-    color: white;
+    display: none;
 }
